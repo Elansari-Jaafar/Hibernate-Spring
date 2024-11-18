@@ -87,22 +87,22 @@ Check the **hibernate-tp** database to verify that the product has been saved in
 SELECT * FROM Product;
 ```
 ## Key Classes
-### 1. **IDao.java**
+### 1. IDao.java
 A generic interface defining CRUD operations.
 
-### 2. ***Product.java***
+### 2. Product.java
 An entity class mapped to the **Product** table in the database.
 
-### 3.* ProductDaoImpl.java*
+### 3. ProductDaoImpl.java
 Implements the **IDao** interface for **Product** objects using Hibernate.
 
-### 4.* HibernateConfig.java*
+### 4. HibernateConfig.java
 Configures Hibernate and Spring integration, including:
 
   - DataSource setup
   - SessionFactory configuration
   - Transaction management
-### 5.* Presentation.java*
+### 5. Presentation.java
 Entry point of the application where a sample product is created and saved.
 
 ## Technologies Used
